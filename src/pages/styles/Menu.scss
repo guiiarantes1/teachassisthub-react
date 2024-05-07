@@ -1,0 +1,93 @@
+.menu_container {
+  width: 100%;
+  height: 90%;
+  #menu_titulo {
+    text-align: center;
+    margin: 15px 0;
+  }
+  .menu_body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+    background-color: #eaeaea;
+    height: 80%;
+    width: 80%;
+    margin: 50px auto 0 auto;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .cadastrar-os {
+      width: 30%;
+      height: 30%;
+      text-align: center;
+      background-color: #4F6D7A;
+      border-radius: 5px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .pesquisar {
+        width: 30%;
+        height: 30%;
+        text-align: center;
+        background-color: #4F6D7A;
+        border-radius: 5px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cadastrar-cliente {
+        width: 30%;
+        height: 30%;
+        text-align: center;
+        background-color: #4F6D7A;
+        border-radius: 5px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .vender {
+        width: 30%;
+      height: 30%;
+      text-align: center;
+      background-color: #4F6D7A;
+      border-radius: 5px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .andamento {
+        width: 30%;
+      height: 30%;
+      text-align: center;
+      background-color: #4F6D7A;
+      border-radius: 5px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .relatorio {
+        width: 30%;
+      height: 30%;
+      text-align: center;
+      background-color: #4F6D7A;
+      border-radius: 5px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

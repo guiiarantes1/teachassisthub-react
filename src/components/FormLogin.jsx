@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/FormLogin.scss";
 import { NavLink } from "react-router-dom";
 
 export const FormLogin = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+      setShowPassword(!showPassword);
+  };
   return (
     <div className="formLogin_container">
       <div className="formLogin_body">
         <h1>Login</h1>
         <form>
           <div className="m-3">
+          <i className="bi bi-person"></i>
             <input
               type="email"
               className="form-control"
@@ -16,16 +22,22 @@ export const FormLogin = () => {
               aria-describedby="emailInput"
               placeholder="Usuário"
             />
-            <i class="bi bi-person"></i>
+      
           </div>
           <div className="m-3">
+          <i className="bi bi-lock"></i>
+           
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               className="form-control"
               id="exampleInputPassword1"
               placeholder="Senha"
             />
-            <i class="bi bi-lock"></i>
+             <i
+              className={showPassword ? "bi bi-eye" : "bi bi-eye-slash"}
+              onClick={togglePasswordVisibility}
+              style={{ cursor: "pointer" }}
+            ></i>
           </div>
           <div className="m-3 form-check">
             <input
@@ -33,14 +45,14 @@ export const FormLogin = () => {
               className="form-check-input"
               id="exampleCheck1"
             />
-            <label className="form-check-label" for="exampleCheck1">
+            <label className="form-check-label" htmlFor="exampleCheck1">
               Lembrar credenciais
             </label>
             <NavLink>Esqueceu a senha?</NavLink>
           </div>
-          <button type="submit" className="btn btn-secondary">
+          <NavLink id="submitButton" to={"/menu"} type="submit" className="btn btn-secondary">
             ENTRAR
-          </button>
+          </NavLink>
         </form>
       </div>
       <p className="newUser">

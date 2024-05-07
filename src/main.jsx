@@ -5,6 +5,7 @@ import { Home } from './pages/Home.jsx'
 import {Login} from "./pages/Login.jsx"
 import './index.css'
 import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom';
+import { Menu } from './pages/Menu.jsx'
 
 
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login/>
+      },
+      {
+        path: "/menu",
+        element: <Menu/>
       },
    
     ],

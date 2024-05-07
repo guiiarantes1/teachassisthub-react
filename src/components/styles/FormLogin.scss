@@ -11,6 +11,7 @@
     -webkit-box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.44);
     -moz-box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.44);
     margin: auto;
+    padding: 40px 0;
 
     h1 {
       font-size: 1.5rem;
@@ -22,12 +23,29 @@
       display: flex;
       flex-direction: column;
       .m-3 {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        i {
+        i.bi-person{
           position: absolute;
           font-size: 20px;
-          padding: 3px 10px;
+          padding: 4px 10px;
+          color: #293241;
+        }
+        i.bi-lock{
+          position: absolute;
+          font-size: 20px;
+          padding: 4px 10px;
+          color: #293241;
+        }
+        
+        i.bi-eye-slash{
+          position: absolute;
+          font-size: 20px;
+          margin: -33px  0 0 310px ;
+          color: #293241;
+        }
+        i.bi-eye{
+          position: absolute;
+          font-size: 20px;
+          margin: -33px  0 0 310px ;
           color: #293241;
         }
         .form-control {
@@ -44,15 +62,17 @@
       }
       .m-3.form-check{
         flex-wrap: wrap !important;
+        
         label{
             margin: 0 5px;
             font-size: 1em;
         }
         .form-check-input{
+          
             margin: 4px 0 4px -24px;
         }
       }
-      button {
+      #submitButton {
         width: fit-content;
         margin: auto;
         border: none;
@@ -61,6 +81,7 @@
         &:hover{
             transform: scale(1.05);
             transition: 100ms;
+            text-decoration: none !important;
         }
       }
     }
